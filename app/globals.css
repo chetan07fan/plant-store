@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 body {
   font-family:
@@ -12,7 +10,19 @@ body {
     sans-serif;
 }
 
-/* Custom utilities */
 .green-btn {
-  @apply bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-2xl font-medium transition-all active:scale-95;
+  background-color: #16a34a;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.green-btn:hover {
+  background-color: #15803d;
+}
+
+.green-btn:active {
+  transform: scale(0.95);
 }
