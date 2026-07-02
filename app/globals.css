@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 body {
   font-family:
     system-ui,
@@ -15,11 +10,9 @@ body {
     "Segoe UI",
     Roboto,
     sans-serif;
-  background: var(--background);
-  color: var(--foreground);
 }
 
-/* Custom utilities for the plant store */
+/* Custom utilities */
 .green-btn {
-  @apply bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl font-medium transition-all active:scale-95;
+  @apply bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-2xl font-medium transition-all active:scale-95;
 }
